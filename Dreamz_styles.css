@@ -358,8 +358,7 @@ font-weight:900;
 .product-accessories-position {
     display: flex;
     justify-content: center;
-    height: 280px;
-    width: 370px;
+
 }
 .dropdown-accessories-desc:hover {
         height: 600px;
