@@ -257,6 +257,8 @@ font-weight:900;
     flex-wrap: wrap;
     justify-content: center;
     gap:0.5em;
+    width: 495;
+    height: 495;
 }
 
 .product-position {
@@ -266,15 +268,14 @@ font-weight:900;
     position: relative;
     border-radius: 18px;
     border-width: 0px;
-    width: 495px;
-    height: 495px;
+    width: 495;
+    height: 495;
    
 }
 
 .product-photo {
     position: relative;
-    width: 495px;
-    height: 495px;
+
     border-radius: 18px;
 }
 
@@ -461,36 +462,42 @@ animation: product-full-desc-animation 2s;
     width:100%;
 }
 
+.tr-td-elem{
+    padding-bottom: 13px;
+}
+
+td{
+    font-size: smaller;
+    padding-right: 10px;
+    padding-left: 13px;
+    vertical-align: top;
+}
+
 .overlay-product {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #008CBA;
   overflow: hidden;
-  opacity: 50%;
+  opacity: 1;
   width: 0;
   height: 100%;
-  transition: .5s ease;
+  box-shadow: 250px 0px 100px -65px rgba(0, 0, 0, 1) inset;
+  /*transition: .5s ease;*/
   border-top-left-radius: 18px;
   border-bottom-left-radius: 18px;
 }
 
 .product-position:hover .overlay-product{
-    width: 50%;
-    animation: product-position-animation 2s;
+    width: 65%;
+    
+    animation: product-position-animation 1s;
 }
 
 @keyframes product-position-animation{
     0% {
         opacity: 0;
-        transform: translateX(0);
-    }
-    35%{
-        opacity: 0;
-    }
-    70%{
-        opacity: 0.7;
+        transform: translateX(-100);
     }
 
     100% {
@@ -499,11 +506,25 @@ animation: product-full-desc-animation 2s;
     }
 }
 
-.text{
+.overlay-product-text{
+    color:  #ffffff;
     display: flex;
     flex-direction: column;
+}
+.overlay-product-name{
+    font-weight: 1000;
+    font-size: large;
     align-items: center;
 }
+
+.overlay-product-price{
+    padding-top: 40px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: 1000;
+    font-size: x-large;
+}
+
 #testvideo {
     position: relative;
     padding: 56.25%;
