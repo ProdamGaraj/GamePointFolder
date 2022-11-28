@@ -598,10 +598,9 @@ font-weight:900;
     margin-right: 20px;
 }
  
-.about_us-photo {
+.about_us-video {
+    box-shadow: 0px 5px 40px 23px rgba(0, 0, 0, 0.85);
     display: flex;
-    border: solid;
-    border-width: 3px;
     color: white;
     height: 337.5px;
     width: 600px;
