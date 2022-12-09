@@ -628,6 +628,18 @@ font-weight:900;
     margin-top: 30px;
 }
 
+.connectLogo{
+    height: 40px;
+    width: 40px;
+}
+.connect-column-info {
+    flex-direction: row;
+    margin-top: 30px;
+    align-items: center;
+    margin-right: 200px;
+    display:table-row
+}
+
 @media (max-width: 1550px) {
     .products_menu{
         flex-direction: column;
