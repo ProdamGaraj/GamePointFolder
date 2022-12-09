@@ -1,5 +1,6 @@
 body {
-    background-color: #161616;
+    /*background-color: #161616;*/
+    background: linear-gradient(180deg, #572323 0%, #682565 48.96%, #181A58 100%);
     margin: 0;
     display:flex;
     flex-direction:column;
@@ -104,7 +105,7 @@ font-weight:900;
     position: relative;
     width: 65%;
     max-width: 1100px;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 0, 0, 0.35) 0%, rgba(255, 0, 0, 0) 100%), #161616;
+    /*background: radial-gradient(50% 50% at 50% 50%, rgba(255, 0, 0, 0.35) 0%, rgba(255, 0, 0, 0) 100%), #161616;*/
     color: white;
     height: 700px;
     margin-top: 10em;
@@ -239,18 +240,20 @@ font-weight:900;
     margin-right: 0;
     width: 100%;
     max-width: 1920px;
+    justify-content: center;
 }
 
 .footer-info {
     display: flex;
     color: white;
-    margin-left: auto;
+    width: 100%;
+    max-width: 1920px;
+    justify-content: space-evenly;
 }
 
 .footer-logo {
     width: 170px;
     height: 150px;
-    margin-left: 50px;
     margin-top: -10px;
 }
 
@@ -259,7 +262,7 @@ font-weight:900;
     flex-direction: column;
     margin-top: 30px;
     align-items: center;
-    margin-right: 200px;
+
 }
 
 .products_menu {
@@ -269,6 +272,7 @@ font-weight:900;
     gap:0.5em;
     width: 495;
     height: 495;
+    margin-top: 3px;
 }
 
 .product-position {
@@ -637,7 +641,6 @@ font-weight:900;
     flex-direction: row;
     margin-top: 30px;
     align-items: center;
-    margin-right: 200px;
 }
 
 @media (max-width: 1550px) {
